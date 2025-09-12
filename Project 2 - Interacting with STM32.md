@@ -1,4 +1,4 @@
-*** Part 1: Solo Setup ***
+#### Part 1: Solo Setup
 1. Set up your environment: CubeIDE and CubeProgrammer
 	1. Download the CubeIDE (includes CubeMX) from the [ST website](https://www.st.com/en/development-tools/stm32cubeide.html)
 		1. Find the installer that matches your operating system
@@ -14,7 +14,7 @@
 		2. Latest version as of writing is 2.20.0
 		3. Extract zip file and open the application
 		4. After installing cube programmer, another window should pop up called "Device Driver Intallation Wizard". This is to download the ST-Link USB driver. Mac and Linux OS are supposed to natively support and may not need this driver. But unless there are any issues with installing this driver, you don't have to do anything. Later on, if the Device Manager shows "unknown ST-Link" you may need to reinstall the driver
-	3. NOTES:
+	3. *NOTES:*
 		- You will need around 5GB of free space on your personal laptop to install these tools (sorry) especially because of the zip files. But after installing Cube IDE and Cube Programmer, you can delete the zip file and exracted folder again ONLY AFTER INSTALLATION IS COMPLETE to save space!
 		- These tools sometimes take a while to open after doing the setup wizard, especially Cube IDE. It will also show a pop up that asks something like "do you want to exclude from Windows defender scans for faster startup?" which you can do if you're comfortable. Essentially, don't panic if things take a while.
 
@@ -39,7 +39,7 @@
 	3. Accept default initialization of peripherals
 	4. Go to Pinout & Cnfiguration tab. Confirm that LD3 is mapped to GPIO_Output/PB3
 
-*** The following steps are intended to be tested with a Nucleo board in person ***
+##### The following steps are intended to be tested with a Nucleo board in person 
 4. Connect the STM32 Nucleo F042K6 board to your computer with USB-C to Micro B cable. Observe the following:
 	- Small LED opposite micro-B connection glows red. This is LD2, and indicates power to the board when it is on.
 	- A larger LED next to the micro-B port glows red. This is LD1, and represents COM activity, aka communication to your computer.
@@ -49,5 +49,5 @@
 		2. Try connecting to another USB port on your computer
 		3. Last resort: if the specific Nucleo board has already been verified to work, reintsall the ST-LINK driver (especially if you are Windows)
 
-*** Known Issues: ***
-- so far, Cube IDE has been regularly freezing and doesn't respond to commands... there are other options for interfacing with STM32 boards (like VScode's PlatformIO extension) and we want to hear member feedback before doing a standardized switch
+#### Known Issues:
+- So far, Cube IDE has been regularly freezing and doesn't respond to commands... there are other options for interfacing with STM32 boards (like VScode's PlatformIO extension) and we want to hear member feedback before doing a standardized switch

@@ -49,5 +49,9 @@
 		2. Try connecting to another USB port on your computer
 		3. Last resort: if the specific Nucleo board has already been verified to work, reintsall the ST-LINK driver (especially if you are Windows)
 
+#### Next Steps:
+5. Once you have familiarity with Cube IDe from steps 1-3, navigate to the /CAN starter code and docs folder in this repository. Unzip the folders, and open the source code in the IDE. 
+6. Do research on CAN if you are unfamiliar with it, and start looking at this code as a learning exercise. If you have an idea to get CAN working between two STM32 Nucleos and would like to test on the dev boards, contact Leon.
+
 #### Known Issues:
 - So far, Cube IDE has been regularly freezing and doesn't respond to commands... there are other options for interfacing with STM32 boards (like VScode's PlatformIO extension) and we want to hear member feedback before doing a standardized switch
